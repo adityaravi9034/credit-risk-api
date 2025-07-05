@@ -1,13 +1,9 @@
-
+# Dockerfile
 FROM python:3.10-slim
 
 WORKDIR /app
+COPY . /app
 
-COPY app.py /app/
-COPY lightgbm_credit_risk_model.joblib /app/
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-RUN pip install --no-cache-dir flask pandas lightgbm joblib
-
-EXPOSE 5000
-
-CMD ["python", "app.py"]
+CMD ["gunicorn", "-b", ":8080", "app:app"]
