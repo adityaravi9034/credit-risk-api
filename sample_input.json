@@ -1,0 +1,17 @@
+{
+  "loan_amount": 25000,
+  "term_months": 36,
+  "interest_rate": 12.5,
+  "installment": 500,
+  "annual_income": 60000,
+  "dti_ratio": 20,
+  "fico_score": 680,
+  "employment_length": 5,
+  "open_credit_lines": 8,
+  "revol_util": 45,
+  "credit_history_years": 10,
+  "num_delinquencies": 1,
+  "home_ownership_encoded": 1,
+  "loan_purpose_encoded": 3,
+  "state_encoded": 10
+}
